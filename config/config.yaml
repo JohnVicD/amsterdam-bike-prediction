@@ -1,0 +1,20 @@
+api:
+  amsterdam_api_key: "${AMSTERDAM_API_KEY}"
+  weather_api_key: "${WEATHER_API_KEY}"
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  models: "models/saved_models"
+
+model_params:
+  prophet:
+    changepoint_prior_scale: 0.05
+    seasonality_prior_scale: 10
+    holidays_prior_scale: 10
+
+visualization:
+  map_center:
+    lat: 52.3676
+    lon: 4.9041
+  zoom_level: 13
